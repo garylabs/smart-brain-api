@@ -22,7 +22,7 @@ app.use(cors());
 app.use(express.json());
 
 app.get('/', (req, res) => {
-	res.send(database.users);
+	res.send('it is working');
 });
 
 app.get('/profile/:id', (req, res) => profile.handleProfile(req, res, db));
